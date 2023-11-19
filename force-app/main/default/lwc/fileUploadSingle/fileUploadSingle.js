@@ -8,7 +8,7 @@ export default class FileUploadSingle extends LightningElement {
     @api label;
     @api multiple
     @api single;
-    message="Please Upload File";
+    @api message="";
     handleUploadFinished(event)
     {
         this.message='File Uploaded';
