@@ -5,11 +5,33 @@
 		<name>ApexClass</name>
 	</types>
 	<types>
+		
+		<members>Document__c.Active__c</members>
+		<members>Document__c.Extensions__c</members>
+		<members>Document__c.Multiple__c</members>
+		<members>Document__c.Object__c</members>
+		<members>Document__c.ParentId__c</members>
+		<members>Document__c.Single__c</members>
+		<members>IndividualDoc__c.Document__c</members>
+		<members>IndividualDoc__c.ParentId__c</members>
+		
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Document__c</members>
+		<members>IndividualDoc__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
 		<members>filUpload</members>
 		<members>fileContainer</members>
 		<members>fileDisplay</members>
 		<members>fileUploadSingle</members>
 		<name>LightningComponentBundle</name>
+	</types>
+    <types>
+		<members>FileUploadAll</members>
+		<name>PermissionSet</name>
 	</types>
 	<version>58.0</version>
 </Package>
