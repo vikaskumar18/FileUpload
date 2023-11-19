@@ -1,0 +1,33 @@
+<template>
+    <div>
+      
+        <template if:true={documents}>
+            <template for:each={documents} for:item="document">
+                <p key={document.docs.Id}>
+                  
+
+                    <c-file-Upload-Single onuploaded={fireparent} my-record-id={document.docs.Id} single={document.docs.Document__r.Single__c} multiple={document.docs.Multiple__c} label={document.docs.Document__r.Name} accepted-formats={document.docs.Document__r.Extensions__c}></c-file-Upload-Single>
+                
+                
+                
+                    <template if:true={document.attachments}>
+                        <lightning-accordion class="example-accordion"
+                        onsectiontoggle={handletogglesection} allow-multiple-sections-open
+                         >
+                         <lightning-accordion-section name="A" label="Uploaded Files">
+                            <c-file-display ondeleted={fireparent} objects={document.attachments}></c-file-display>   </lightning-accordion-section>
+                         </lightning-accordion>
+                        
+            
+                    </template>
+                </p>
+                
+            </template>
+           
+            
+        </template>
+    </div>
+    <div>
+       
+    </div>
+</template>

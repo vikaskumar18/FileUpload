@@ -1,0 +1,13 @@
+.message {
+    color:red;
+font-size: 16px;
+text-align:center;
+
+}
+
+.slds-form-element__label
+{
+    
+        -webkit-text-fill-color: blue;
+   
+}

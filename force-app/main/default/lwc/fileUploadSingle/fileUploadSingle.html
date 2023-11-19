@@ -1,0 +1,37 @@
+<template>
+   
+    <div class="c-container">
+        <lightning-layout pull-to-boundary="medium">
+          
+                
+            <lightning-layout-item  flexibility="auto" padding="horizontal-medium">
+                <div class="header-column">
+                    <p class="field-title" title="Field2 (3)">
+
+                        <lightning-file-upload
+                      
+                        label={label}
+                        class="slds-form_inline"
+                        name="fileUploader"
+                        accept={acceptedFormats}
+                        record-id={myRecordId}
+                        onuploadfinished={handleUploadFinished}
+                        multiple={multiple}>
+                </lightning-file-upload>
+                    </p>
+
+                        
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item flexibility="auto" padding="horizontal-medium">
+                <div class="header-column">
+                   <span><p class="field-title message" title="Field 3">{message}</p></span> 
+                    
+                </div>
+            </lightning-layout-item>
+            
+        </lightning-layout>
+        </div>
+
+    
+</template>

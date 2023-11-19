@@ -1,0 +1,50 @@
+<template>
+    <div>
+     
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-box">
+        <thead>
+            <tr class="slds-line-height_reset">
+              <th class="" scope="col">
+                <div class="slds-truncate" title="File Name">File Name</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate" title="Preview">Preview</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate" title="Download">Download</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate" title="Delete">Delete</div>
+              </th>
+              </tr>
+              </thead>
+              <tbody>
+                <template for:each={objects} for:item="object">
+                   
+                    <tr class="slds-hint-parent" key={object.Id}>
+                        <td data-label="File  Name" >
+                            <div class="slds-truncate" title="Name">{object.ContentDocument.Title}</div>
+                          </td>
+                          <td data-label="Account Name" >
+                            <div class="slds-truncate" title="Cloudhub">
+                                <lightning-button icon-name="utility:preview" data-record={object.ContentDocumentId} name="Preview" variant="brand-outline" icon-position="right" label="Preview" onclick={preview}></lightning-button>
+                            </div>
+                          </td>
+                          <td data-label="Account Name" >
+                            <div class="slds-truncate" title="Cloudhub"> <lightning-button data-record={object.ContentDocumentId} icon-name="standard:record_delete" icon-position="right" label="Delete" onclick={deleterec} variant="destructive" name="delete"></lightning-button>
+                            </div>
+                          </td>
+                          <td data-label="Account Name" >
+                            <div class="slds-truncate" title="Cloudhub"> <lightning-button data-record={object.ContentDocumentId} icon-name="action:download" icon-position="right" data-version={object.ContentDocument.LatestPublishedVersionId} name="download" onclick={download} variant="brand" label="Download" ></lightning-button>
+                            </div>
+                          </td>
+                          
+                        </tr>
+                </template>
+               
+                  </tbody>
+
+
+    </table>
+</div>
+</template>
