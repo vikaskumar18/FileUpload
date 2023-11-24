@@ -14,10 +14,9 @@ example
 
 
 
+It has certain fields that will help you to take req document as input eg. Document name,Type,Object
 
-It certain fields that will help you to take req doucment as input eg. Document name,Type,Object
-
-post creating record. you need to drag and drop fileContainer 
+post creating record. you need to drag and drop fileContainer lwc component on record detail page from app builder.
 
 
 
