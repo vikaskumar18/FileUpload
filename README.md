@@ -37,3 +37,8 @@ after uploading file, it will display list of documents uploaded to to it. It al
 Below is data model :
 
 ![Screenshot 2023-11-19 at 10 49 19 AM](https://github.com/vikaskumar18/FileUpload/assets/64322972/0e735f27-ce18-4218-9b02-3f9002a51037)
+Demo:
+
+![Screen Recording 2023-11-19 at 10 43 19 AM (1)](https://github.com/vikaskumar18/FileUpload/assets/64322972/f53fcb7d-9ab5-4923-9531-53cd34948722)
+
+
